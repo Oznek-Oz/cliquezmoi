@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 'Poppins', sans-serif;
+}
+
+section{
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   background-color: #EFEFEF;  
+}
+
+
+.col-md-8{
+    display: grid;
+    place-items: center;
+}
+form{
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+    width: 100dvw;
+}
+
+
+.card{
+    margin: 0 5px;
+}
+
+.container-achats{
+    border-top: 2px solid wheat;
+    height: 100dvh;
+    background-color: bisque;
+}
+.facture{
+    height: 100dvh;
+}
+.achats{
+    height: 100dvh;
+}
+
+
+/* Pour m'amuser*/
+
+.overlayBox{
+    position:fixed;
+    top: 0%;
+    left: 0%;
+    width:100%;
+    height:100%;
+    background-color:darkred;
+    opacity: 50%;
+
+}
+
+.box::before{
+    content: "";
+    position: absolute;
+    border: none;
+    border-radius: 8px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+}
+.box{
+    position: relative;
+    border: 2px solid white;
+    box-shadow:0px 0px 10px rgb(255, 0, 0),
+    0px 0px 20px rgb(255, 62, 62),
+    0px 0px 40px rgb(248, 0, 111),
+    0px 0px 80px rgb(134, 3, 154) !important;
+    background-image: url('../coeur.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.question{
+    color: whitesmoke;
+    text-shadow:0px 0px 10px cyan,
+                0px 0px 20px cyan,
+                0px 0px 40px cyan,
+                0px 0px 80px cyan !important;
+}
+.question>span{
+    color: red;
+    font-weight: 500;
+    font-family: cursive;
+    text-shadow:0px 0px 10px white,
+                0px 0px 20px white,
+                0px 0px 40px white,
+                0px 0px 80px white !important;
+}
+hr{
+    animation: cligotehr 1s infinite;
+    text-shadow:0px 0px 10px rgb(255, 255, 255),
+                0px 0px 20px rgb(194, 0, 0),
+                0px 0px 40px rgb(244, 0, 73),
+                0px 0px 80px rgb(255, 70, 126) !important;
+}
+@keyframes clignotehr {
+    0%{opacity: 1;}
+    50%{opacity: 0.3;}
+    100%{opacity: 1;}
+}
+.yes{
+    text-shadow:0px 0px 10px cyan,
+                0px 0px 20px cyan,
+                0px 0px 40px cyan,
+                0px 0px 80px cyan !important;
+}
+
+.no{
+    animation: clignoteNo 1.1s infinite;
+    text-shadow:0px 0px 10px cyan,
+                0px 0px 20px cyan,
+                0px 0px 40px cyan,
+                0px 0px 80px cyan !important;
+}
+@keyframes clignoteNo {
+    0%{opacity: 1;}
+    50%{opacity: 0.1;}
+    100%{opacity: 1;}
+}
+.question{
+    font-family:cursive;
+    animation: clignote 1.1s infinite;
+}
+@keyframes clignote {
+    0%{opacity: 1;}
+    50%{opacity: 1;}
+    100%{opacity: 1;}
+}
+.texte1{
+    animation: clignoteText1 3s ;
+}
+@keyframes clignoteText1 {
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+.texte2{
+    animation: clignoteText2 3s ;
+}
+@keyframes clignoteText2 {
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+.texte3{
+    animation: clignoteText3 1s ;
+}
+@keyframes clignoteText3 {
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+.verset{
+    animation: clignoteverset 1s ;
+}
+@keyframes clignoteverset {
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+.yes{
+    animation: clignote 1.1s infinite;
+    border-color: violet;
+    color: rgb(50, 0, 107);
+
+}
+.yes:hover{
+    background-color:rgb(176, 21, 179) !important ;
+    
+}
+@keyframes clignote {
+    0%{opacity: 1;}
+    50%{opacity: 1;}
+    100%{opacity: 1;}
+}
+.coeurs{
+    position:absolute;
+    top: 65%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    text-shadow:0px 0px 10px rgb(251, 0, 255),
+                0px 0px 20px rgb(124, 0, 143),
+                0px 0px 40px rgb(114, 0, 143),
+                0px 0px 80px rgb(230, 70, 255) !important;
+}
+.coeur{
+    color:pink;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    animation: apparition 2s 0s ease-in-out infinite;
+    
+}
+
+@keyframes apparition {
+    0%{
+        opacity:0; 
+        transform:scale(0);
+    }
+    5%{
+        opacity: 0.5;
+        transform:scale(0.5) translate(-20px,-20px) ;
+    }
+    10%{
+        opacity: 1;
+        transform:scale(0.75) translate(-60px,-40px) ;
+    }
+    15%{
+        opacity: 1;
+        transform:scale(1) translate(-80px,-60px) ;
+    }
+    20%{
+        opacity: 1;
+        transform:scale(1.05) translate(-100px, -80px) ;
+    }
+    25%{
+        opacity: 1;
+        transform:scale(1.05) translate(-110px, -110px) ;
+    }
+    30%{
+        opacity: 1;
+        transform:scale(1.05) translate(-80px, -120px) ;
+    }
+    35%{
+        opacity: 1;
+        transform:scale(1.05) translate(-60px, -125px) ;
+    }
+    40%{
+        opacity: 1;
+        transform:scale(1.05) translate(-40px, -120px) ;
+    }
+    45%{
+        opacity: 1;
+        transform:scale(1.05) translate(-20px, -110px) ;
+    }
+    50%{
+        opacity: 1;
+        transform:scale(1.05) translate(0px, -105px) ;
+    }
+    
+    55%{
+        opacity: 1;
+        transform:scale(1.05) translate(20px, -110px) ;
+    }
+    60%{
+        opacity: 1;
+        transform:scale(1.05) translate(40px, -120px) ;
+    }
+    65%{
+        opacity: 1;
+        transform:scale(1.05) translate(60px, -125px) ;
+    }
+    70%{
+        opacity: 1;
+        transform:scale(1.05) translate(80px, -100px) ;
+    }
+    75%{
+        opacity: 1;
+        transform:scale(1.05) translate(110px, -100px) ;
+    }
+    80%{
+        opacity: 1;
+        transform:scale(1.05) translate(100px, -80px) ;
+    }
+    85%{
+        opacity: 1;
+        transform:scale(1.05) translate(80px, -60px) ;
+    }
+    90%{
+        opacity: 1;
+        transform:scale(1.05) translate(60px, -40px) ;
+    }
+    95%{
+        opacity: 1;
+        transform:scale(1.05) translate(20px, -20px) ;
+    }
+    100%{
+        opacity: 1;
+        transform:scale(1.05) translate(0px, 0px) ;
+    }
+}
+.yes:hover.coeurs.coeur{
+    animation-play-state: running;
+}
+
+.message{
+    top: 50%;
+    left: 50% !important;
+    transform: translate(50%,-50%);
+    background-color:coral;
+    color:goldenrod;
+}
+.cadreBox{
+    position: relative;
+    border:2px solid rgb(1, 5, 29);
+    border-left: 4px solid;
+}
